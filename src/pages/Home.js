@@ -26,7 +26,7 @@ const Home = () => {
           <NavbarBrand href="/">FindMyGitHub</NavbarBrand>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="https://github.com/kevinhermawan/find-my-github-context">
+              <NavLink href="https://github.com/kevinhermawan/find-my-github">
                 GitHub
               </NavLink>
             </NavItem>
