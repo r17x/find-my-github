@@ -11,8 +11,8 @@ import {
   Col
 } from "reactstrap";
 
-import { UserContext } from "../contexts/UserContext";
-import { RepositoryContext } from "../contexts/RepositoryContext";
+import { UserProvider } from "../contexts/UserContext";
+import { RepositoryProvider } from "../contexts/RepositoryContext";
 
 import Repository from "../components/Repository";
 import User from "../components/User";
@@ -34,8 +34,8 @@ const Home = () => {
         </Container>
       </Navbar>
       <Container style={styles.content}>
-        <UserContext>
-          <RepositoryContext>
+        <UserProvider>
+          <RepositoryProvider>
             <FormGroup>
               <Search />
             </FormGroup>
@@ -47,8 +47,8 @@ const Home = () => {
                 <Repository />
               </Col>
             </Row>
-          </RepositoryContext>
-        </UserContext>
+          </RepositoryProvider>
+        </UserProvider>
       </Container>
     </div>
   );

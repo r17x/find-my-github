@@ -1,9 +1,10 @@
 import React from "react";
 import axios from "axios";
 
-const { Consumer, Provider } = React.createContext();
+let UserContext;
+const { Consumer, Provider } = (UserContext = React.createContext());
 
-class UserContext extends React.Component {
+class UserProvider extends React.Component {
   constructor() {
     super();
 
@@ -39,4 +40,4 @@ class UserContext extends React.Component {
   }
 }
 
-export { Consumer as UserConsumer, UserContext };
+export { Consumer as UserConsumer, UserProvider, UserContext };
