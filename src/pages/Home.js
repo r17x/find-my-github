@@ -18,12 +18,14 @@ import Repository from "../components/Repository";
 import User from "../components/User";
 import Search from "../components/Search";
 
+const {PUBLIC_URL} = process.env;
+
 const Home = () => {
   return (
     <div>
       <Navbar color="dark" dark>
         <Container>
-          <NavbarBrand href="/">FindMyGitHub</NavbarBrand>
+          <NavbarBrand href={PUBLIC_URL}>FindMyGitHub</NavbarBrand>
           <Nav className="ml-auto" navbar>
             <NavItem>
               <NavLink href="https://github.com/kevinhermawan/find-my-github">
